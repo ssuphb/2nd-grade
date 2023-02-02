@@ -1,0 +1,223 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+// 문자열 String은 클래스이므로 생성시 String str = new String(); 형식을 맞춰야 함. 
+// 문자열의 비교에는 연산자가 아니라 메서드를 사용해야함. str.equals(); 
+
+
+
+
+
+/*
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int piece;
+		int[] chessPiece = {1,1,2,2,2,8};
+		int[] check = new int[6];
+		
+		for(int i = 0; i < chessPiece.length; i++){
+		    piece = sc.nextInt();
+		    check[i] = chessPiece[i] - piece;
+		    System.out.printf(check[i] + " ");
+		}
+		
+	
+		
+		sc.close();
+		
+	}
+}
+
+
+// oven clock
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        int timeH, timeM;
+        int timeR;
+        
+        Scanner sc = new Scanner(System.in);
+        timeH = sc.nextInt();
+        timeM = sc.nextInt();
+        timeR = sc.nextInt();
+        
+        timeM = timeM + timeR;
+        
+        if(timeM>=60){
+        timeH = timeH + timeM/60;
+        timeM = timeM%60;
+        
+            if(timeH>=24){
+                timeH = timeH - 24;
+            }
+        }
+        
+        
+        System.out.println(timeH + " " + timeM);
+        
+    }
+}
+//Dice game
+
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int num1, num2, num3, maxnum;
+        num1 = sc.nextInt();
+        num2 = sc.nextInt();
+        num3 = sc.nextInt();
+        
+        if( num1 == num2 ){
+            if (num2 == num3 ) {
+                System.out.println(10000 + num1*1000);
+            }
+            else 
+            System.out.println(1000 + num1*100);
+        }
+        
+        if (num1 != num2){
+            if(num2 == num3){
+                System.out.println(1000 + num2*100);
+            }
+            
+            if(num1 == num3){
+                System.out.println(1000 + num1*100);
+            }
+            
+            if(num2 != num3 && num1 != num3){
+                if(num1 > num2) {
+                    if (num1 > num3){
+                        maxnum = num1;
+                        System.out.println(maxnum*100);
+                    }
+                    if ( num1 < num3){
+                        maxnum = num3;
+                        System.out.println(maxnum*100);
+                    }
+                }
+                if(num2 > num1){
+                    if (num2 > num3){
+                        maxnum = num2;
+                        System.out.println(maxnum*100);
+                    }
+                    if (num2 < num3){
+                        maxnum = num3;
+                        System.out.println(maxnum*100);
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+//receipt
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        int SUM_PRICE, LINE, REAL_PRICE, COUNT, PRICE;
+        Scanner sc = new Scanner(System.in);
+        SUM_PRICE = sc.nextInt();
+        LINE = sc.nextInt();
+        REAL_PRICE = 0;
+        for ( int i = 0; i < LINE ; i++){
+            PRICE = sc.nextInt();
+            COUNT = sc.nextInt();
+            REAL_PRICE += PRICE*COUNT;
+        }
+        if (SUM_PRICE == REAL_PRICE) System.out.println("Yes");
+        else System.out.println("No");
+    }
+}
+
+
+*/
+
+/* count number.
+import java.util.Scanner;
+import java.io.IOException;
+
+public class Main{
+    public static void main(String[] args)throws IOException{
+        int n = 0;
+        int[] arr = new int[100];
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        
+        //Scanner scnum = new Scanner(System.in);
+        for (int i = 0; i < n; i++){
+            
+            arr[i] = sc.nextInt();
+        }
+        
+        int fnum = 0;
+        //Scanner scfnum = new Scanner(System.in);
+        fnum = sc.nextInt();
+        int count = 0;
+        for(int j = 0; j<n; j++){
+            if(arr[j] == fnum){
+                count++;
+            }
+        }
+        
+        System.out.println(count);
+    }
+}
+*/
+
+/* someone who didn't hw?
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[31];
+        for(int i = 1; i < 29 ; i++){
+            int num = 0;
+            num = sc.nextInt();
+            arr[num]++;
+        }
+        for(int j = 1; j < 31 ; j++){
+            if(arr[j] == 0){
+                System.out.println(j);
+            }
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
